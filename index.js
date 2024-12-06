@@ -8,21 +8,21 @@ console.log("Hello World check");
 // "0 is even"
 // "1 is odd"
 // "2 is even"
-for (let i = 0; i <= 15; i++) {
-  if (i % 2 === 0) {
-    console.log("This is even:", i);
-  } else {
-    console.log("This is odd:", i);
-  }
-}
+// for (let i = 0; i <= 15; i++) {
+//   if (i % 2 === 0) {
+//     console.log("This is even:", i);
+//   } else {
+//     console.log("This is odd:", i);
+//   }
+// }
 
-for (let i = 0; i <= 15; i++) {
-  if (i % 2 === 0) {
-    console.log(`${i} EEEVEN`);
-  } else {
-    console.log(`${i} OOOddd`);
-  }
-}
+// for (let i = 0; i <= 15; i++) {
+//   if (i % 2 === 0) {
+//     console.log(`${i} EEEVEN`);
+//   } else {
+//     console.log(`${i} OOOddd`);
+//   }
+// }
 //------------------------------------------------------------------------------------------------------------------------------------------------
 /*
 Exercise 2
@@ -34,15 +34,15 @@ For numbers which are multiples of both three and five print "FizzBuzz". Go to t
 */
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
-for (let i = 0; i <= 100; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log(`${i} FIZZBUZZ`);
-  } else if (i % 5 === 0) {
-    console.log(`${i} BUZZ`);
-  } else if (i % 3 === 0) {
-    console.log(`${i} FIZZ`);
-  }
-}
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log(`${i} FIZZBUZZ`);
+//   } else if (i % 5 === 0) {
+//     console.log(`${i} BUZZ`);
+//   } else if (i % 3 === 0) {
+//     console.log(`${i} FIZZ`);
+//   }
+// }
 //------------------------------------------------------------------------------------------------------------------------------------------------
 /*
 Exercise 3
@@ -55,18 +55,17 @@ let arr_2 = [9, 2, 42, 55, 71, 22, 4,  5,  90, 25, 26]; // --> 351
 Example output:
 276 + 351 = 627
  */
-let arr_1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];
-
-let arr_2 = [9, 2, 42, 55, 71, 22, 4, 5, 90, 25, 26];
-let sumOfSecondArray = 0;
-let sumOfFirstArray = 0;
-for (let i = 0; i < arr_1.length; i++) {
-  sumOfFirstArray = sumOfFirstArray + arr_1[i];
-  sumOfSecondArray = sumOfSecondArray + arr_2[i];
-}
-console.log(sumOfFirstArray);
-console.log(sumOfSecondArray);
-console.log(sumOfFirstArray + sumOfSecondArray);
+// let arr_1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];
+// let arr_2 = [9, 2, 42, 55, 71, 22, 4, 5, 90, 25, 26];
+// let sumOfSecondArray = 0;
+// let sumOfFirstArray = 0;
+// for (let i = 0; i < arr_1.length; i++) {
+//   sumOfFirstArray = sumOfFirstArray + arr_1[i];
+//   sumOfSecondArray = sumOfSecondArray + arr_2[i];
+// }
+// console.log(sumOfFirstArray);
+// console.log(sumOfSecondArray);
+// console.log(sumOfFirstArray + sumOfSecondArray);
 //------------------------------------------------------------------------------------------------------------------------------------------------
 /*
 Exercise 4
@@ -77,12 +76,12 @@ let n1 = 24;
 Example output:
 2 4 6 8 10 12 14 16 18 20 22 OR each item on a new line
 */
-let n1 = Number(24);
-for (let i = 1; i <= n1; i++) {
-  if (i % 2 === 0) {
-    console.log(i);
-  }
-}
+// let n1 = Number(24);
+// for (let i = 1; i <= n1; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
 
 /*
 //------------------------------------------------------------------------------------------------------------------------------------------------
@@ -98,18 +97,18 @@ jZvZsZrZpZ OR each letter on a new line
 HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
  */
 //          1,2,3,4,5,6,7,8,9,10
-let str1 = "javascript";
-let newString = "";
-for (let i = 0; i < str1.length; i++) {
-  if ((i + 1) % 2 === 0) {
-    // console.log("Z");
-    newString = newString + "Z";
-  } else {
-    // console.log(str1[i]);
-    newString = newString + str1[i];
-  }
-}
-console.log(newString);
+// let str1 = "javascript";
+// let newString = "";
+// for (let i = 0; i < str1.length; i++) {
+//   if ((i + 1) % 2 === 0) {
+//     // console.log("Z");
+//     newString = newString + "Z";
+//   } else {
+//     // console.log(str1[i]);
+//     newString = newString + str1[i];
+//   }
+// }
+// console.log(newString);
 
 // 1 loop
 //  i = 0
@@ -145,16 +144,16 @@ let str2 = "don’t know why";
 Example output:
 “yes”
  */
-let str2 = "Don't know why";
-for (i = 1; i <= str2.length; i++) {
-  if (str2[i] == "y") {
-    console.log("yes");
-  } else {
-    console.log("no");
-  }
-}
+// let str2 = "Don't know why";
+// for (i = 1; i < str2.length; i++) {
+//   if (str2[i] == "y") {
+//     console.log("yes");
+//   } else {
+//     console.log("no");
+//   }
+// }
 /*
-//------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 Exercise 7
  
 Given a number n Calculate the factorial of the number
@@ -162,9 +161,16 @@ Given a number n Calculate the factorial of the number
 let n2 = 4; //  4 * 3 * 2 * 1 = 24
 Example output:
 24
- 
-*/
+ */
 
+// let n3 = 4;
+// let summOfFactorial = 1;
+// for (let i = 1; i <= n3; i++) {
+//   summOfFactorial = summOfFactorial * i;
+//   console.log(summOfFactorial);
+// }
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
 //  Exercise 8
 
 // Multiplication Tables
@@ -174,6 +180,12 @@ Example output:
 // Bonus: Use a nested for loop to show the tables for every multiplier from
 // 1 to 10 (100 results total).
 
+const multiplier = 9;
+for (i = 0; i <= 10; i++) {
+  console.log(i + "*" + multiplier + "=" + multiplier * i);
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 9
 
 // The Grade Assigner
@@ -181,7 +193,23 @@ Example output:
 // by logging every value from 60 to 100: your log should show "For 88, you got a
 // B. For 89, you got a B. For 90, you got an A. For 91, you got an A.", etc.,
 // logging each grade point in the range.
+// let toonUtga = Number(prompt("Enter a number:"));
+let unelgee1 = 0;
+for (i = 60; i <= 100; i++){
+ 
+    console.log(i);
+  }
 
+  
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 10
 
 //Print Numbers from 1 to 10 Write a loop that prints numbers from 1 to 10.
