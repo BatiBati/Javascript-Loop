@@ -56,25 +56,36 @@ Example output:
 276 + 351 = 627
  */
 let arr_1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];
+
 let arr_2 = [9, 2, 42, 55, 71, 22, 4, 5, 90, 25, 26];
+let sumOfSecondArray = 0;
+let sumOfFirstArray = 0;
 for (let i = 0; i < arr_1.length; i++) {
-  let sumOfFirstarray = 0;
-  let sumOfSecondarray = 0;
-  sumOfFirstarray = sumOfFirstarray + arr_1 [i];
-  sumOfSecondarray = sumOfSecondarray + arr_2 [i];
-  console.log(i);
-  
+  sumOfFirstArray = sumOfFirstArray + arr_1[i];
+  sumOfSecondArray = sumOfSecondArray + arr_2[i];
+}
+console.log(sumOfFirstArray);
+console.log(sumOfSecondArray);
+console.log(sumOfFirstArray + sumOfSecondArray);
+//------------------------------------------------------------------------------------------------------------------------------------------------
+/*
+Exercise 4
+
+Using a for loop print all even numbers up to and including n. Don’t include 0.
+
+let n1 = 24;
+Example output:
+2 4 6 8 10 12 14 16 18 20 22 OR each item on a new line
+*/
+let n1 = Number(24);
+for (let i = 1; i <= n1; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
 }
 
 /*
-Exercise 4
- 
-Using a for loop print all even numbers up to and including n. Don’t include 0.
- 
-let n1 = 22;
-Example output:
-2 4 6 8 10 12 14 16 18 20 22 OR each item on a new line
- 
+//------------------------------------------------------------------------------------------------------------------------------------------------
 Exercise 5
  
 Given a string change the every second letter to an uppercase ‘Z’. Assume
@@ -82,17 +93,68 @@ there are no space.
  
 let str1 = "javascript";  
 Example output:
+ 1 3 5
 jZvZsZrZpZ OR each letter on a new line
 HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
- 
+ */
+//          1,2,3,4,5,6,7,8,9,10
+let str1 = "javascript";
+let newString = "";
+for (let i = 0; i < str1.length; i++) {
+  if ((i + 1) % 2 === 0) {
+    // console.log("Z");
+    newString = newString + "Z";
+  } else {
+    // console.log(str1[i]);
+    newString = newString + str1[i];
+  }
+}
+console.log(newString);
+
+// 1 loop
+//  i = 0
+// if ((0+1)% 2 == 0)
+//   1%2 == 0.5
+//   0.5 == ?
+
+// 2 loop
+// i = 1
+//  if (2%2 == 0)
+//  0 == 0 ?
+
+// 3 loop
+//  i =2
+//  if((2+1)/2 ==0 )
+//  3%2 == 0
+// 1 == 0
+
+// 4 loop
+// i = 3
+// if ((3+1)%2 ==0 )
+//  3+1 = 4
+// 4%2 == 0
+
+/*
+//------------------------------------------------------------------------------------------------------------------------------------------------
 Exercise 6
  
-Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
+Check if a string contains the letter “y”.
+Print “yes” if it does and “no” if it does not.
  
 let str2 = "don’t know why";
 Example output:
 “yes”
- 
+ */
+let str2 = "Don't know why";
+for (i = 1; i <= str2.length; i++) {
+  if (str2[i] == "y") {
+    console.log("yes");
+  } else {
+    console.log("no");
+  }
+}
+/*
+//------------------------------------------------------------------------------------------------------------------------------------------------
 Exercise 7
  
 Given a number n Calculate the factorial of the number
