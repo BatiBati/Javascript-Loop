@@ -66,6 +66,7 @@ Example output:
 // console.log(sumOfFirstArray);
 // console.log(sumOfSecondArray);
 // console.log(sumOfFirstArray + sumOfSecondArray);
+
 //------------------------------------------------------------------------------------------------------------------------------------------------
 /*
 Exercise 4
@@ -149,7 +150,7 @@ Example output:
 //   if (str2[i] == "y") {
 //     console.log("yes");
 //   } else {
-//     console.log("no");
+//     console.log("No");
 //   }
 // }
 /*
@@ -167,8 +168,8 @@ Example output:
 // let summOfFactorial = 1;
 // for (let i = 1; i <= n3; i++) {
 //   summOfFactorial = summOfFactorial * i;
-//   console.log(summOfFactorial);
 // }
+// console.log(summOfFactorial);
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
 //  Exercise 8
@@ -179,11 +180,16 @@ Example output:
 // (e.g. "2 * 9 = 18").
 // Bonus: Use a nested for loop to show the tables for every multiplier from
 // 1 to 10 (100 results total).
+// const multiplier = 9;
+// for (i = 0; i <= 10; i++) {
+//   console.log(i + "*" + multiplier + "=" + multiplier * i);
+// }
 
-const multiplier = 9;
-for (i = 0; i <= 10; i++) {
-  console.log(i + "*" + multiplier + "=" + multiplier * i);
-}
+// for (let k = 1; k <= 10; k++) {
+//   for (let o = 1; o <= 10; o++) {
+//     console.log(`${k} x ${o} = ${k * o}`);
+//   }
+// }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 9
@@ -193,22 +199,21 @@ for (i = 0; i <= 10; i++) {
 // by logging every value from 60 to 100: your log should show "For 88, you got a
 // B. For 89, you got a B. For 90, you got an A. For 91, you got an A.", etc.,
 // logging each grade point in the range.
-// let toonUtga = Number(prompt("Enter a number:"));
-let unelgee1 = 0;
-for (i = 60; i <= 100; i++){
- 
-    console.log(i);
-  }
 
-  
+// let assignGrade = prompt("Dungee oruulna uu:");
+// if (assignGrade >= 90 && assignGrade <= 100) {
+//   console.log("You got an A");
+// } else if (assignGrade >= 80 && assignGrade <= 89) {
+//   console.log("You got an B");
+// } else if (assignGrade >= 70 && assignGrade <= 79) {
+//   console.log("You got an C");
+// } else if (assignGrade >= 60 && assignGrade <= 69) {
+//   console.log("You got an D");
+// }
 
-
-
-
-
-
-
-
+// for (let assignGrade = 60; assignGrade <= 100; assignGrade++) {
+//   let assignGrade = assignGrade[i];
+// }
 //------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 10
 
@@ -217,13 +222,23 @@ for (i = 60; i <= 100; i++){
 // Example Output:
 // 1 2 3 4 5 6 7 8 9 10
 
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`${i}`);
+// }
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 11
 
 // Sum of Numbers from 1 to 20 Write a loop to calculate the sum of numbers from 1 to 20.
 
 // Example Output:
 // The sum is 210
-
+// let sumOfNUmber = 0;
+// for (i = 1; i <= 20; i++) {
+//   sumOfNUmber = sumOfNUmber + i;
+// }
+// console.log(`The 0 to 20 sum is : ${sumOfNUmber}`);
+//------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 12
 
 // Count Vowels in a String Write a loop to count how many vowels are in a given string.
@@ -232,6 +247,32 @@ for (i = 60; i <= 100; i++){
 // Example Output:
 // Number of vowels: 3
 
+// let helloString = "hello world";
+// let vowels_arr = ["a", "i", "e", "o", "u"];
+// let sumOfVowels = "";
+// for (let i = 1; i < helloString.length; i++) {
+//   if (i % 2 === 0);
+
+//   console.log(vowels_arr);
+// }
+
+let helloString = "hello world";  // The string to analyze
+let vowels_arr = ["a", "i", "e", "o", "u"];      // Array of vowels we are checking for
+let vowelCount = {};              // Object to store the count of each vowel
+
+// Loop through each character in the string
+for (let i = 0; i < helloString.length; i++) {
+    let char = helloString[i].toLowerCase();  // Convert character to lowercase to handle case insensitivity
+    if (vowels_arr.includes(char)) {  // Check if the character is a vowel
+        // Increment the count for the found vowel
+        vowelCount[char] = (vowelCount[char] || 0) + 1;
+    }
+}
+
+console.log("Vowel summary:", vowelCount);  // Output the summary of vowels
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 13
 
 // Print Odd Numbers Write a loop to print all odd numbers from 1 to 15.
