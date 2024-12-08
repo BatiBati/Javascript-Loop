@@ -234,7 +234,7 @@ Example output:
 // Example Output:
 // The sum is 210
 // let sumOfNUmber = 0;
-// for (i = 1; i <= 20; i++) {
+// for (let i = 1; i <= 20; i++) {
 //   sumOfNUmber = sumOfNUmber + i;
 // }
 // console.log(`The 0 to 20 sum is : ${sumOfNUmber}`);
@@ -249,28 +249,13 @@ Example output:
 
 // let helloString = "hello world";
 // let vowels_arr = ["a", "i", "e", "o", "u"];
-// let sumOfVowels = "";
-// for (let i = 1; i < helloString.length; i++) {
-//   if (i % 2 === 0);
-
-//   console.log(vowels_arr);
+// let sumOfvowels = 0;
+// for (let i = 0; i < helloString.length; i++) {
+//     if (vowels_arr.includes(helloString[i])){
+//         sumOfvowels++;
 // }
-
-let helloString = "hello world";  // The string to analyze
-let vowels_arr = ["a", "i", "e", "o", "u"];      // Array of vowels we are checking for
-let vowelCount = {};              // Object to store the count of each vowel
-
-// Loop through each character in the string
-for (let i = 0; i < helloString.length; i++) {
-    let char = helloString[i].toLowerCase();  // Convert character to lowercase to handle case insensitivity
-    if (vowels_arr.includes(char)) {  // Check if the character is a vowel
-        // Increment the count for the found vowel
-        vowelCount[char] = (vowelCount[char] || 0) + 1;
-    }
-}
-
-console.log("Vowel summary:", vowelCount);  // Output the summary of vowels
-
+// }
+// console.log(`Sum of Vowels: ${sumOfvowels}`);
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 13
@@ -279,7 +264,13 @@ console.log("Vowel summary:", vowelCount);  // Output the summary of vowels
 
 // Example Output:
 // 1 3 5 7 9 11 13 15
+// for (let i = 1; i <= 15; i++) {
+//   if (i % 2 >= 1) {
+//     console.log(i);
+//   }
+// }
 
+//------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 14
 
 // Check if a Number is Prime Write a loop to check if a number n is prime.
@@ -287,7 +278,14 @@ console.log("Vowel summary:", vowelCount);  // Output the summary of vowels
 // let n = 7;
 // Example Output:
 // 7 is a prime number
+// let n = 7;
+// for (let i = 1; i <= 7; i++){
+//     if (i % n === 1 || i % n === 0 ){
+//         console.log(`${i} is a Prime Number`);
+//     }
+// }
 
+//------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 15
 
 // Reverse a String Write a loop to reverse the characters in a string.
@@ -295,7 +293,14 @@ console.log("Vowel summary:", vowelCount);  // Output the summary of vowels
 // let str = "javascript";
 // Example Output:
 // tpircsavaj
+// let n4 = "javascript";
+// let reversed = "";
+// for (let i = n4.length - 1; i >= 0; i--) {
+//    reversed += n4[i];
+// }
+// console.log(reversed);
 
+//------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 16
 
 // Calculate Power of a Number Write a loop to calculate base^exponent.
@@ -303,7 +308,13 @@ console.log("Vowel summary:", vowelCount);  // Output the summary of vowels
 // let base = 2, exponent = 5;
 // Example Output:
 // 2^5 = 32
+let base = 2, exponent = 5;
+let sum = 1;
+for (let i = 1; i <= exponent; i ++) {
 
+}
+console.log(Math.PI);
+//------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 17
 
 // Print Multiples of 5 Write a loop to print multiples of 5 up to 50.
