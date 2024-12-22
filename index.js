@@ -342,11 +342,8 @@ Example output:
 // ----------
 let sum = 0
 for (let i = 1; i <= 15; i ++) {
-    if (sum % 2 === 0) {
-        console.log(`${sum} is even`);
-    } else {
-        console.log(`${sum} is odd`);
-    }
+    
+    
 }
 
 
