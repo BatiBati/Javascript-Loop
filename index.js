@@ -408,17 +408,19 @@ let str1 = "javascript";
 Example output:
 jZvZsZrZpZ OR each letter on a new line
 HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
-*/ 
-let str1 = "javascript";
-console.log(str1);
+*/
 
-for (let i = 0; i <= str1.length; i++ ) {
-  // if (str1(i))
-  console.log(str1[i]);
-}
+// let str1 = "javascript";
+// let result = "";
 
-
-
+// for (let i = 0; i < str1.length; i++) {
+//   if ((i + 1) % 2 === 0) {
+//     result = result + "Z";
+//   } else {
+//     result = result + str1[i];
+//   }
+// }
+// console.log(result);
 
 /*
 Exercise 6
@@ -428,7 +430,20 @@ Check if a string contains the letter “y”. Print “yes” if it does and �
 let str2 = "don’t know why";
 Example output:
 “yes”
- 
+ */
+
+// let str2 = "Don’t know why";
+// let yLetter = 'y';
+// for (let i = 0; i < str2.length; i++) {
+//   if (str2[i] === yLetter){
+//     console.log('yes');
+//   }
+//    else if (str2[i] !== yLetter) {
+//     console.log("no");
+//   }
+// }
+
+/*
 Exercise 7
  
 Given a number n Calculate the factorial of the number
@@ -436,8 +451,16 @@ Given a number n Calculate the factorial of the number
 let n2 = 4; //  4 * 3 * 2 * 1 = 24
 Example output:
 24
- 
 */
+
+/* 
+let n2 = 4;
+let sum = 1;
+for (let i = 1; i <= n2; i ++) {
+  // console.log(i);
+  sum = sum * i;
+}console.log(sum);
+ */
 
 //  Exercise 8
 
@@ -448,6 +471,13 @@ Example output:
 // Bonus: Use a nested for loop to show the tables for every multiplier from
 // 1 to 10 (100 results total).
 
+// let multiplier = 9;
+// let sum;
+// for (i = 1; i <= 10; i ++) {
+//   sum = i * multiplier
+//  console.log(`${i} * ${multiplier} = ${sum}`);
+// }
+
 // Exercise 9
 
 // The Grade Assigner
@@ -455,6 +485,23 @@ Example output:
 // by logging every value from 60 to 100: your log should show "For 88, you got a
 // B. For 89, you got a B. For 90, you got an A. For 91, you got an A.", etc.,
 // logging each grade point in the range.
+// console.log(assignGrade(70));
+
+// let score = 100;
+// function assignGrade(value1) {
+//   if (value1 <= 100 && value1 >= 90) {
+//     console.log(`You got an A`);
+//   } else if (value1 <= 89 && value1 >= 80) {
+//     console.log(`You got a B`);
+//   } else if (value1 <= 79 && value1 >= 70) {
+//     console.log(`You got a C`);
+//   } else if (value1 <= 69 && value1 >= 60) {
+//     console.log(`You got a D`);
+//   } else if (value1 <= 59) {
+//     console.log(`You got a F`);
+//   }
+// }
+// assignGrade(score);
 
 // Exercise 10
 
@@ -462,6 +509,11 @@ Example output:
 
 // Example Output:
 // 1 2 3 4 5 6 7 8 9 10
+// let trim = "";
+// for (let i = 1; i <= 10; i++) {
+//   trim += i + " ";
+// }
+// console.log(trim.trim());
 
 // Exercise 11
 
@@ -469,6 +521,13 @@ Example output:
 
 // Example Output:
 // The sum is 210
+
+// let lastNumber = 20;
+// let sum = 0;
+// for (let i = 1; i <= lastNumber; i++) {
+//   sum = i + sum;
+// }
+// console.log(sum);
 
 // Exercise 12
 
@@ -478,12 +537,31 @@ Example output:
 // Example Output:
 // Number of vowels: 3
 
+// const vowels = ['a', 'e', 'i', 'o', 'u'];
+// const vowels = "AEIOUaeiou";
+// const str = "Hello world";
+// let sumOfVowels = 0;
+// for (let i = 0; i < str.length; i++) {
+//   if (vowels.includes(str[i])) {
+//     sumOfVowels++;
+//   }
+// }
+// console.log(sumOfVowels);
+
 // Exercise 13
 
 // Print Odd Numbers Write a loop to print all odd numbers from 1 to 15.
 
 // Example Output:
 // 1 3 5 7 9 11 13 15
+
+// let nNumber = 15;
+// let numInLine = '';
+// for (let i = 1; i <= nNumber; i++) {
+//   if (i % 2 !== 0) {
+//     numInLine += i + ' ';
+//   }
+// } console.log(numInLine.trim());
 
 // Exercise 14
 
@@ -492,6 +570,14 @@ Example output:
 // let n = 7;
 // Example Output:
 // 7 is a prime number
+
+let n = 8;
+for (i = 1; i <= 7; i++) {
+  if (n % n == 0) {
+    
+  }
+  console.log(`${n} is a prime number`);
+}
 
 // Exercise 15
 
