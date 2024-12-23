@@ -327,14 +327,14 @@ Example output:
 // "2 is even"
 // ----------
 // ----------
-let sum = 0;
-for (let i = 1; i <= 15; i++) {
-  if (i % 2 === 0) {
-    console.log(`${i} is even number`);
-  } else {
-    console.log(`${i} is even odd`);
-  }
-}
+// let sum = 0;
+// for (let i = 1; i <= 15; i++) {
+//   if (i % 2 === 0) {
+//     console.log(`${i} is even number`);
+//   } else {
+//     console.log(`${i} is even odd`);
+//   }
+// }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
 // Exercise 2
@@ -390,11 +390,15 @@ Example output:
 2 4 6 8 10 12 14 16 18 20 22 OR each item on a new line
 */
 
-for ()
+/* let n1 = 22;
+for (let i = 1; i <= n1; i++) {
+  if (i % 2 === 0) console.log(i);
+}
+  for (let i = 2; i <= n1; i=i+2) {
+    if (i % 2 === 0) console.log(i);
+  } */
 
-
-
- /*
+/*
 Exercise 5
  
 Given a string change the every second letter to an uppercase ‘Z’. Assume
@@ -404,7 +408,19 @@ let str1 = "javascript";
 Example output:
 jZvZsZrZpZ OR each letter on a new line
 HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
- 
+*/ 
+let str1 = "javascript";
+console.log(str1);
+
+for (let i = 0; i <= str1.length; i++ ) {
+  // if (str1(i))
+  console.log(str1[i]);
+}
+
+
+
+
+/*
 Exercise 6
  
 Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
