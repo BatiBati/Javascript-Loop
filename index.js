@@ -571,13 +571,12 @@ for (let i = 1; i <= n2; i ++) {
 // Example Output:
 // 7 is a prime number
 
-let n = 8;
-for (i = 1; i <= 7; i++) {
-  if (n % n == 0) {
-    
-  }
-  console.log(`${n} is a prime number`);
-}
+// let n = 8;
+// for (i = 1; i <= 7; i++) {
+//   if (n % n == 0) {
+//   }
+//   console.log(`${n} is a prime number`);
+// }
 
 // Exercise 15
 
@@ -587,6 +586,10 @@ for (i = 1; i <= 7; i++) {
 // Example Output:
 // tpircsavaj
 
+// let str = "javascript";
+// str = str.split("").reverse().join("");
+// console.log(str);
+
 // Exercise 16
 
 // Calculate Power of a Number Write a loop to calculate base^exponent.
@@ -594,6 +597,11 @@ for (i = 1; i <= 7; i++) {
 // let base = 2, exponent = 5;
 // Example Output:
 // 2^5 = 32
+// let base = 2, exponent = 5;
+// let sum = 1;
+// for (let i = 1; i <= exponent; i++){
+//   sum *= base;
+// } console.log(`${base}^${exponent}=${sum}`);
 
 // Exercise 17
 
@@ -601,6 +609,14 @@ for (i = 1; i <= 7; i++) {
 
 // Example Output:
 // 5 10 15 20 25 30 35 40 45 50
+
+// let endNumber = 10;
+// let multiplier = 5;
+// let sum;
+// for (let i = 1; i <= endNumber; i++) {
+//   sum = i*multiplier
+//   console.log(sum);
+// }
 
 // Exercise 18
 
@@ -610,6 +626,15 @@ for (i = 1; i <= 7; i++) {
 // Example Output:
 // Largest number: 98
 
+// let arr = [3, 67, 15, 98, 23];
+// let container = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > container) {
+//     container = arr[i];
+//   }
+// }
+// console.log(container);
+
 // Exercise 19
 
 // Count Specific Letter Write a loop to count how many times the letter "a" appears in a string.
@@ -617,6 +642,14 @@ for (i = 1; i <= 7; i++) {
 // let str = "javascript is amazing";
 // Example Output:
 // Number of 'a': 4
+
+// let str = "javascript is amazing";
+// let sum = 0;
+// for (let i = 0; i < str.length; i++) {
+//   if (str[i] === "a") {
+//     sum++;
+//   }
+// }
 
 // Exercise 20
 
@@ -626,6 +659,46 @@ for (i = 1; i <= 7; i++) {
 // Example Output:
 // 0 1 1 2 3 5 8
 
+// let n = 5;
+// let a = 0,
+//   b = 1;
+
+// for (let i = 0; i < n; i++) {
+//   console.log(a);
+//   let next = a + b;
+//   a = b;
+//   b = next;
+// }
+
+//loop-1-------------------------
+// next = 0+1 -> next -> 1
+// 0 = 1
+// 1 = 1
+//loop-2-------------------------
+// next = 1 + 1 / next = 2
+// 1 = 1
+// 1 = 2
+//loop-3-------------------------
+// next = 1 + 2 / next 3
+// 1 = 2
+// 2 = 3
+//loop-4-------------------------
+// 2 + 3 = 5 (next)
+// 2 = 3
+// 3 = 5
+//loop-5-------------------------
+// 3 + 5 = 8 (next)
+// 3 = 5
+// 5 = 8
+//loop-6-------------------------
+// 5 + 8 = 13 (next)
+// 5 = 8
+// 8 = 13
+//loop-7-------------------------
+// 8 + 13 = 21
+// 8 = 13
+// 13 = 21
+
 // Exercise 21
 
 // Find All Divisors Write a loop to find all divisors of a number n.
@@ -633,6 +706,13 @@ for (i = 1; i <= 7; i++) {
 // let n = 28;
 // Example Output:
 // 1 2 4 7 14 28
+
+// let n = 28;
+// for (i = 1; i <= n; i++) {
+//   if (n % i === 0) {
+//     console.log(i);
+//   }
+// }
 
 // Exercise 22
 
@@ -642,6 +722,15 @@ for (i = 1; i <= 7; i++) {
 // Example Output:
 // radar is a palindrome
 
+// let str = "radar";
+// let reverseStr = str.split("").reverse().join("");
+// if (str === reverseStr) {
+//   console.log(str);
+//   console.log("String is a palindrom");
+// } else {
+//   console.log("String is not a palindrom");
+// }
+
 // Exercise 23
 
 // Count Words in a Sentence Write a loop to count the number of words in a sentence.
@@ -650,6 +739,15 @@ for (i = 1; i <= 7; i++) {
 // Example Output:
 // Number of words: 5
 
+// let sentence = "Loops are fun to learn";
+// let sumOfWordNumber = 0;
+// sentence = sentence.split(" ");
+
+// for (let i = 0; i < sentence.length; i++) {
+//   sumOfWordNumber = sentence.length;
+// }
+// console.log(`Number of words: ${sumOfWordNumber}`);
+
 // Exercise 24
 
 // Find Missing Number Write a loop to find the missing number in an array of integers from 1 to 10.
@@ -657,6 +755,15 @@ for (i = 1; i <= 7; i++) {
 // let arr = [1, 2, 3, 5, 6, 7, 8, 9, 10];
 // Example Output:
 // Missing number: 4
+
+let arr = [1, 2, 3, 5, 6, 7, 8, 9, 10];
+let comparison = [10];
+for (let i = 0; i < arr.length; i++) {
+  if (comparison[10] === arr[i]) {
+    
+    
+  } 
+}console.log(arr);
 
 // Exercise 25
 
