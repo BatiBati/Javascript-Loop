@@ -756,14 +756,18 @@ for (let i = 1; i <= n2; i ++) {
 // Example Output:
 // Missing number: 4
 
-let arr = [1, 2, 3, 5, 6, 7, 8, 9, 10];
-let comparison = [10];
-for (let i = 0; i < arr.length; i++) {
-  if (comparison[10] === arr[i]) {
-    
-    
-  } 
-}console.log(arr);
+// let arr = [1, 2, 3, 5, 6, 7, 8, 9, 10];
+// let plusArr = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//   plusArr += arr[i];
+// }
+// let jSum = 0;
+// for (let j = 1; j <= 10; j++) {
+//   jSum += j;
+// }
+// let totalSum = jSum - plusArr;
+// console.log(totalSum);
 
 // Exercise 25
 
@@ -772,6 +776,15 @@ for (let i = 0; i < arr.length; i++) {
 // let arr = [-3, 5, -2, 0, 9, -8];
 // Example Output:
 // [5, 9]
+
+// let arr = [-3, 5, -2, 0, 9, -8];
+// let positiveNumber = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) {
+//     positiveNumber.push(arr[i]);
+//   }
+// }
+// console.log(positiveNumber);
 
 // Exercise 26
 
@@ -784,6 +797,12 @@ for (let i = 0; i < arr.length; i++) {
 // ***
 // ****
 // *****
+let total = [1, 2, 3, 4, 5];
+let star = "*";
+for (let i = 1; i <= total.length; i++) {
+  star == total;
+  console.log(star);
+}  
 
 // Exercise 27
 
