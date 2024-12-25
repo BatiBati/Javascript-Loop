@@ -797,12 +797,14 @@ for (let i = 1; i <= n2; i ++) {
 // ***
 // ****
 // *****
-let total = [1, 2, 3, 4, 5];
-let star = "*";
-for (let i = 1; i <= total.length; i++) {
-  star == total;
-  console.log(star);
-}  
+
+// for (let i = 1; i <= 5; i++) {
+//   let row = "";
+//   for (let j = 1; j <= i; j++) {
+//     row += "*";
+//   }
+//   console.log(row);
+// }
 
 // Exercise 27
 
@@ -811,6 +813,11 @@ for (let i = 1; i <= total.length; i++) {
 // let num = 12345;
 // Example Output:
 // Sum of digits: 15
+
+let num = 12345;
+num.split(" ");
+
+
 
 // Exercise 28
 
