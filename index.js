@@ -815,9 +815,16 @@ for (let i = 1; i <= n2; i ++) {
 // Sum of digits: 15
 
 let num = 12345;
-num.split(" ");
+let sum = 0;
 
+// Convert number to string to loop through each digit
+let numStr = num.toString();
+// Loop through each character in the string
+for (let i = 0; i < numStr.length; i++) {
+    sum += parseInt(numStr[i]);  // Convert each character back to a number and add to sum  
 
+}
+console.log("Sum of digits:", sum);
 
 // Exercise 28
 
@@ -826,6 +833,9 @@ num.split(" ");
 // let arr = [1, 2, 3, 2, 1, 4];
 // Example Output:
 // [1, 2, 3, 4]
+
+
+
 
 // Exercise 29
 
@@ -843,6 +853,7 @@ num.split(" ");
 // Example Output:
 // [1, 3, 4, 5, 8]
 
+// Exercise 31
 // Generate a Diamond Pattern Write a loop to create a diamond pattern.
 // Example Output:
 // markdown
