@@ -814,7 +814,7 @@ for (let i = 1; i <= n2; i ++) {
 // Example Output:
 // Sum of digits: 15
 
-let num = 12345;
+/* let num = 12345;
 let sum = 0;
 
 // Convert number to string to loop through each digit
@@ -825,6 +825,7 @@ for (let i = 0; i < numStr.length; i++) {
 
 }
 console.log("Sum of digits:", sum);
+ */
 
 // Exercise 28
 
@@ -834,8 +835,32 @@ console.log("Sum of digits:", sum);
 // Example Output:
 // [1, 2, 3, 4]
 
+// const arr = [1, 2, 3, 2, 1, 4, 5, 6, 7];
+// const myArr = [1, 2, 3, 4, 5];
 
+// for (let i = 0; i < arr.length; i++) {
+//   // console.log(`===THIS IS OUTER=== ${arr[i]}`);
+//   let matchedNumbers = [];
+//   for (let j = 0; j < myArr.length; j++) {
+//     // console.log(`INNER ${myArr[j]}`);
+//     matchedNumbers.push(myArr[j]);
+//     if ( myArr[j].includes(matchedNumbers)  /* myArr[j] === arr[i] */) {
 
+//     }
+
+//   } console.log(matchedNumbers);
+// }
+
+// let arr = [1, 2, 3, 2, 1, 4, 5, 7, 1];
+// let uniqueArr = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (!uniqueArr.includes(arr[i])) {
+//     uniqueArr.push(arr[i]);
+//   }
+// }
+
+// console.log(uniqueArr); // Output: [1, 2, 3, 4]
 
 // Exercise 29
 
@@ -845,6 +870,32 @@ console.log("Sum of digits:", sum);
 // Example Output:
 // Second largest number: 9
 
+// let arr = [4, 10, 9, 2, 7];
+// let firstNumber = [];
+// // let secondNumber = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   firstNumber = firstNumber.push(arr[i])
+//   console.log(firstNumber);
+  
+/*   if (arr[i] > firstNumber) {
+    secondNumber = firstNumber;
+    firstNumber = arr[i];
+    console.log(arr[i]);
+    
+  } else if (arr[i] > secondNumber) {
+    secondNumber = arr[i];
+    console.log(arr[i]);
+  } */
+// } 
+// console.log(secondNumber);
+
+//-----loop - 1, arr index - 0 -----
+
+
+
+
+
 // Exercise 30
 
 // Sort an Array Write a loop to sort an array in ascending order without using built-in functions.
@@ -852,6 +903,10 @@ console.log("Sum of digits:", sum);
 // let arr = [5, 3, 8, 1, 4];
 // Example Output:
 // [1, 3, 4, 5, 8]
+
+// let arr = [5, 3, 8, 1, 4];
+// arr.sort()
+// console.log(arr);
 
 // Exercise 31
 // Generate a Diamond Pattern Write a loop to create a diamond pattern.
